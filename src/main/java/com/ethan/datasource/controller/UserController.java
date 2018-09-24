@@ -18,7 +18,7 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @PostMapping(name = "/add")
+    @PostMapping
     public String insertUser(String name, String password){
         User user = new User();
         user.setUsername(name);
